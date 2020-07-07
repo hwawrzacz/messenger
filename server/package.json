@@ -1,0 +1,20 @@
+{
+  "name": "messenger-server",
+  "version": "1.0.0",
+  "description": "Server for WebSocket messenger",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "websocket",
+    "messenger"
+  ],
+  "author": "Żaneta Mielczarek, Hubert Wawrzacz",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {}
+}
