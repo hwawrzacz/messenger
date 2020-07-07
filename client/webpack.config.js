@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/server.ts',
+    entry: './src/client.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'server.js'
+        filename: 'client.js'
     },
     watch: true
 }
