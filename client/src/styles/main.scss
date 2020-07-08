@@ -1,0 +1,73 @@
+// Common
+i {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+}
+
+// General structure
+.fullscreen-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 64px 1fr 24px; 
+}
+
+// Header
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: purple;
+
+    span.title {
+        justify-self: flex-start;
+    }
+}
+
+// Conversation
+main {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    background-color: skyblue;
+
+    .conversation-wrapper {
+        height: 100%;
+        background-color: rgb(13, 61, 80);
+    }
+
+    .new-message-wrapper {
+        background-color: rgb(0, 168, 235);
+    }
+}
+
+// Side panel - users lists
+aside.users-list {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    
+    background-color: rosybrown;
+}
+
+// Footer
+footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+
+    background-color: teal;
+    text-align: center;
+}
