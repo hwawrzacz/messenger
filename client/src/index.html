@@ -11,13 +11,15 @@
 
 <body>
     <div class="fullscreen-wrapper">
-        <header>
+        <header class="header">
             <span class="header__title">WebSocket messenger</span>
-            <button>Do nothing</button>
-            <div class="icons-wrapper">
-                <button><i class="icon">home</i></button>
-                <button><i class="icon">favorite</i></button>
-                <button><i class="icon">share</i></button>
+            <div class="header__buttons-wrapper">
+                <button>Do nothing</button>
+                <div class="icons-wrapper--horizontal">
+                    <button class="icon"><i>home</i></button>
+                    <button class="icon"><i>favorite</i></button>
+                    <button class="icon"><i>share</i></button>
+                </div>
             </div>
         </header>
 
@@ -26,30 +28,31 @@
 
         <main>
             <div class="conversation-wrapper">
-                <div class="message-wrapper">
-                    <div class="other-message"></div>
+                <div class="message-wrapper message-wrapper--others">
+                    <div class="message">Hi!</div>
                 </div>
-                <div class="message-wrapper">
-                    <div class="my-message"></div>
+                <div class="message-wrapper message-wrapper--mine">
+                    <div class="message">Henlo, waddup?</div>
                 </div>
-                <div class="message-wrapper">
-                    <div class="other-message"></div>
+                <div class="message-wrapper message-wrapper--others">
+                    <div class="message">It's just a randomly typed message content to check how does it look
+                        in a early preview of the app, so nothin' special</div>
                 </div>
-                <div class="message-wrapper">
-                    <div class="other-message"></div>
+                <div class="message-wrapper message-wrapper--others">
+                    <div class="message">Oh, cool.</div>
                 </div>
-                <div class="message-wrapper">
-                    <div class="other-message"></div>
+                <div class="message-wrapper message-wrapper--others">
+                    <div class="message">Yep</div>
                 </div>
-                <div class="message-wrapper">
-                    <div class="my-message"></div>
+                <div class="message-wrapper message-wrapper--mine">
+                    <div class="message">See ya</div>
                 </div>
             </div>
 
-            <div class="new-message-wrapper">
-                <button><i class="icon">insert_photo</i></button>
+            <div class="message-input-wrapper">
+                <button class="icon"><i>insert_photo</i></button>
                 <input type="text" name="new-message" id="new-message" />
-                <button><i class="icon">forward</i></button>
+                <button class="icon"><i>forward</i></button>
             </div>
         </main>
 
