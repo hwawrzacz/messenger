@@ -6,18 +6,26 @@
 button {
     width: calc(3 * #{$elementHeight});
     height: $elementHeight;
+    margin: calc(#{$margin} / 4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: red;
     border: none;
     border-radius: $borderRadius;
-    margin: $margin;
     cursor: pointer;
 
     &.icon {
         width: $elementHeight;
         height: $elementHeight;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
+        font-size: 1.2em;
     }
 }
 

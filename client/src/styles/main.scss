@@ -3,16 +3,14 @@
 @import "./default-elements.scss";
 @import "./header.scss";
 @import "./conversation.scss";
-@import "./guests-list.scss";
+@import "./guests.scss";
 @import "./footer.scss";
 
 // Common
 * {
     box-sizing: border-box;
-
-    &:focus {
-        outline: 2px solid blueviolet;
-    }
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -37,7 +35,7 @@ main {
 }
 
 // Side panel - users lists
-aside.guests-list {
+aside.guests {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
