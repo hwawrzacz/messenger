@@ -1,5 +1,6 @@
 #SASS
 *.css.map
+*.css
 
 # Logs
 logs

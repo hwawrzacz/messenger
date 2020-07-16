@@ -1,0 +1,37 @@
+//========================================
+//=========== DEFAULT ELEMENTS ===========
+//========================================
+@import './variables';
+
+button {
+    width: calc(3 * #{$elementHeight});
+    height: $elementHeight;
+    background-color: red;
+    border: none;
+    border-radius: $borderRadius;
+    margin: $margin;
+    cursor: pointer;
+
+    &.icon {
+        width: $elementHeight;
+        height: $elementHeight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Icon
+i {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+}
+
+input {
+    height: $elementHeight;
+    padding: $padding;
+    
+    border-radius: $borderRadius;
+    border: none;
+}

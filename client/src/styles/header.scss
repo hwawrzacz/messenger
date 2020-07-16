@@ -1,0 +1,24 @@
+//==============================
+//=========== HEADER ===========
+//==============================
+@import './variables';
+
+header {
+    padding: 0 $padding;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: purple;
+    color: white;
+
+    .header__buttons-wrapper {
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
