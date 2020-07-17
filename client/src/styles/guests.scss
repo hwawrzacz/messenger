@@ -4,13 +4,12 @@
 @import './variables';
 
 aside.guests {
-    background-color: rosybrown;
+    padding: 0 $padding;
 }
 
 .guest {
     display: flex;
     align-items: center;
-    padding: 0 $padding;
     margin: $margin 0;
 
     &__avatar {

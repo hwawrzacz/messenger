@@ -7,14 +7,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-
-    background-color: skyblue;
+    background-color: #ddd;
 
     & > .conversation {
         height: 100%;
         padding: calc(2 * #{$padding});
-        
-        background-color: rgb(13, 61, 80);
 
         & > .message__wrapper {
             display: flex;
@@ -38,19 +35,19 @@ main {
             
             &--mine {
                 justify-content: flex-end;
-                color: white;
 
                 & > .message__content {
-                    background-color: red;
+                    background-color: $appBackground;
+                    color: $appTextOnBackground;
                 }
             }
 
             &--others {
                 justify-content: flex-start;
-                color: white;
 
                 & > .message__content {
-                    background-color: skyblue;
+                    background-color: $appSecondary;
+                    color: $appTextOnSecondary;
                 }
             }
         }
@@ -60,12 +57,14 @@ main {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+    
+    .new-message__input {
+        width: 400px;
+        max-width: 90%;
+    }
 
-        background-color: rgb(0, 168, 235);
-
-        input {
-            width: 400px;
-            max-width: 90%;
-        }
+    .new-message__button--accent {
+        background-color: $appAccent;
     }
 }

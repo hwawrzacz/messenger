@@ -1,8 +1,25 @@
 //===============================================
 //================== Variables ==================
 //===============================================
+
+// Sizes
 $borderRadius: 6px;
 $fontSize: 16px;
 $margin: 16px;
 $padding: 8px;
 $elementHeight: calc(2 * #{$fontSize});
+
+// Colors
+.col {
+    color: darkred;
+}
+
+$appPrimary: rgb(160, 0, 160);
+$appSecondary: rgb(105, 0, 105);
+$appAccent: gold;
+$appBackground: white;
+
+$appTextOnPrimary: rgba(255, 255, 255, 0.84);
+$appTextOnSecondary: rgba(255, 255, 255, 0.94);
+$appTextOnAccent: rgba(0, 0, 0, 0.84);
+$appTextOnBackground: rgba(0, 0, 0, 0.84);
