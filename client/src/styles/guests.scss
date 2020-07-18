@@ -3,8 +3,12 @@
 //==============================
 @import './variables';
 
-aside.guests {
+.guests {
+    width: 250px;
     padding: 0 $padding;
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
 
 .guest {

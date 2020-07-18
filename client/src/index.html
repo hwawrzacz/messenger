@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/flex.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/default-elements.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/guests.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>WebSocket messenger</title>
 </head>
 
@@ -23,52 +30,55 @@
             </div>
         </header>
 
-        <aside class="guests">
-            <div class="guest">
-                <p class="guest__avatar">JT</p>
-                <span class="guest__name">John Travolta</span>
-            </div>
-            <div class="guest">
-                <p class="guest__avatar">SR</p>
-                <span class="guest__name">Salva Rodriquez</span>
-            </div>
-            <div class="guest">
-                <p class="guest__avatar">EE</p>
-                <span class="guest__name">Enumo ElBoolean</span>
-            </div>
-        </aside>
-
         <main>
-            <div class="conversation">
-                <div class="message__wrapper message__wrapper--others">
-                    <p class="message__content">Hi!</p>
+            <section class="conversation">
+                <div class="conversation__messages">
+                    <div class="message__wrapper message__wrapper--others">
+                        <p class="message__content">Hi!</p>
+                    </div>
+                    <div class="message__wrapper message__wrapper--mine">
+                        <p class="message__content">Henlo, waddup?</p>
+                    </div>
+                    <div class="message__wrapper message__wrapper--others">
+                        <p class="message__content">It's just a randomly typed message content to check how does it
+                            looks
+                            in an early preview of the app, so nothin' special
+                        </p>
+                    </div>
+                    <div class="message__wrapper message__wrapper--others">
+                        <p class="message__content">Oh, cool.</p>
+                    </div>
+                    <div class="message__wrapper message__wrapper--others">
+                        <p class="message__content">Yep</p>
+                    </div>
+                    <div class="message__wrapper message__wrapper--mine">
+                        <p class="message__content">See ya</p>
+                    </div>
                 </div>
-                <div class="message__wrapper message__wrapper--mine">
-                    <p class="message__content">Henlo, waddup?</p>
-                </div>
-                <div class="message__wrapper message__wrapper--others">
-                    <p class="message__content">It's just a randomly typed message content to check how does it
-                        looks
-                        in an early preview of the app, so nothin' special
-                    </p>
-                </div>
-                <div class="message__wrapper message__wrapper--others">
-                    <p class="message__content">Oh, cool.</p>
-                </div>
-                <div class="message__wrapper message__wrapper--others">
-                    <p class="message__content">Yep</p>
-                </div>
-                <div class="message__wrapper message__wrapper--mine">
-                    <p class="message__content">See ya</p>
-                </div>
-            </div>
 
-            <div class="new-message__wrapper">
-                <input type="text" name="new-message" class="new-message__input" id="new-message" />
-                <button class="new-message__button--accent">
-                    <span>Send</span>
-                    <i>forward</i>
-                </button>
+                <div class="new-message__wrapper">
+                    <input type="text" name="new-message" class="new-message__input" id="new-message"
+                        placeholder="Type a message..." />
+                    <button class="new-message__button--accent">
+                        <span>Send</span>
+                        <i>forward</i>
+                    </button>
+                </div>
+            </section>
+
+            <div class="guests">
+                <div class="guest">
+                    <p class="guest__avatar">JT</p>
+                    <span class="guest__name">John Travolta</span>
+                </div>
+                <div class="guest">
+                    <p class="guest__avatar">SR</p>
+                    <span class="guest__name">Salva Rodriquez</span>
+                </div>
+                <div class="guest">
+                    <p class="guest__avatar">EE</p>
+                    <span class="guest__name">Enumo ElBoolean</span>
+                </div>
             </div>
         </main>
 
